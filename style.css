@@ -37,8 +37,6 @@ label,p {
     overflow: hidden;
 }
 
-
-
 .signup {
     padding: 2vw 5vw;
     grid-column: 2 / -1;
@@ -103,15 +101,6 @@ input, #signin {
     justify-content: center; 
     border: 0;
 }
-
-#date {
-    /* color: transparent; */
-}
-
-.stores {
-    text-align: center;
-}
-
 
 .image {
     grid-column: 1 / 2;
@@ -179,14 +168,6 @@ input, #signin {
         font-size: 3vw;
         font-weight: 200;
     }
-/* 
-    #date {
-        display: none;
-    } */
-
-    /* label[for="date"] {
-        display: none;
-    } */
 
     .input {
         margin-top: 2vw;
