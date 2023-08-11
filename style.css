@@ -111,7 +111,7 @@ input, #signin {
 }
 
 .image {
-    background-image: url('./assets/images/cloud.jpg');
+    background-image: url('./assets/images/image.jpg');
     height: 100%;
     background-size: cover;
     background-position: center;
