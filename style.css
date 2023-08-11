@@ -22,6 +22,8 @@ h1 {
     background-color:white;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
+    border-radius: 1rem;
+    overflow: hidden;
     /* box-shadow: 1px 1px 1px 1px; */
 }
 
@@ -60,19 +62,12 @@ h1 {
     text-align: end;
 }
 
-#signin {
-    background-color: black;
-    color: white;
-}
-
 #create {
     background-color: #0d6efd;
     color: white;
 }
 
-
 input, #signin {
-    radius: 5%;
     padding: 1rem 2rem;
     margin: 0.5rem 0;
     /* display: inline-block; */
@@ -81,8 +76,9 @@ input, #signin {
     box-sizing: border-box;
 }
 
-label {
-    font-size: 1rem;
+#signin {
+    background-color: black;
+    color: white;
 }
 
 p {
@@ -100,7 +96,7 @@ p {
     justify-content: center;
 }
 
-label {
+label,p {
     font-size: 1rem;
     font-weight: 200;
 }
