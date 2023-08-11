@@ -1,7 +1,26 @@
+
 body {
-    background-color:#2b3035;
+    /* background-color:#2b3035; */
+    background-image: linear-gradient(to left bottom, #cd98c7, #e296b3, #ec989c, #eaa087, #deab78);
     font-family: sans-serif;
 }
+
+
+
+h1 {
+    font-size: 1.5vw;
+    margin: 1.5vw 0rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+label,p {
+    font-size: 0.8vw;
+    font-weight: 200;
+}
+
 .container {
     height: 100vh;
     width: 100%;
@@ -10,31 +29,25 @@ body {
     align-items: center;
 }
 
-h1 {
-    font-size: 2rem;
-    margin: 1rem 0rem;
-}
-
 .card {
     display: grid;
-    height: 80%;
+    /* height: 80%; */
     width: 80%;
     background-color:white;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
-    border-radius: 1rem;
+    border-radius: 1vw;
     overflow: hidden;
-    /* box-shadow: 1px 1px 1px 1px; */
 }
 
 .image {
-    background-color: #4d9dd1;
+    background-color: #7bb5dc;
     grid-column: 1 / 2;
     grid-row: 1/ -1;
 }
 
 .signup {
-    padding: 1rem 5rem;
+    padding: 2vw 5vw;
     grid-column: 2 / -1;
 }
 
@@ -42,7 +55,7 @@ h1 {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    gap: 1vw;
 }
 
 .input {
@@ -62,47 +75,35 @@ h1 {
     text-align: end;
 }
 
-#create {
-    background-color: #0d6efd;
-    color: white;
-}
-
 input, #signin {
-    padding: 1rem 2rem;
-    margin: 0.5rem 0;
-    /* display: inline-block; */
-    border: 1px solid #ccc;
-    border-radius: 0.4rem;
+    padding: 0.8vw 0.3vw;
+    margin: 0.6vw 0;
+    display: inline-block;
+    border: 0px;
+    background-color:#eeeeee;
+    border-radius: 0.4vw ;
     box-sizing: border-box;
+    font-size: 1vw;
 }
 
-#signin {
-    background-color: black;
-    color: white;
-}
-
-p {
+.no_account {
     text-align: center;
 }
 
-#logo {
-    margin-left: -2rem;
+#create {
+    background-color: #0d6efd;
+    color: white;
+    border: 0;
 }
 
-#signin {
+#signin { 
+    background-color: black;
+    color: white;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    justify-content: center;
-}
-
-label,p {
-    font-size: 1rem;
-    font-weight: 200;
-}
-
-a {
-    text-decoration: none;
+    gap: 0.5vw;
+    justify-content: center; 
+    border: 0;
 }
 
 .stores {
@@ -110,12 +111,22 @@ a {
 }
 
 .image {
-    background-image: url('./assets/images/image.jpg');
-    /* height: 200px; */
+    background-image: url('./assets/images/cloud.jpg');
+    height: 100%;
     background-size: cover;
     background-position: center;
 }
 
-#signin, #create {
-    border: 0;
+
+@media screen and (max-width: 768px) {
+    .card {
+        display: grid;
+        width: 90%;
+        background-color:white;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        border-radius: 1vw;
+        overflow: hidden;
+    }
 }
+
